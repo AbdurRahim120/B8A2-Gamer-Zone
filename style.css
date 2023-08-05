@@ -20,6 +20,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 30px 130px;
+  align-items: center;
 }
 .nav-title {
   display: flex;
@@ -27,11 +28,11 @@ header {
   align-items: center;
 }
 .nav-title img {
-  width: 80px;
-  height: 40px;
+  width: 70px;
+  height: 35px;
 }
 .nav-title h3 {
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 700;
   color: #0b0223;
 }
@@ -67,6 +68,9 @@ header {
   align-items: center;
   padding: 10px 130px 0px 130px;
 }
+/* .banner-content{
+  background: url("images/Group\ 14.png");
+} */
 .banner-title h3 {
   font-size: 2.3rem;
   font-weight: 600;
@@ -150,11 +154,80 @@ header {
 }
 .card img {
   width: 255px;
+  margin-bottom: 10px;
 }
 .card p {
   color: #534c64;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 150%;
   width: 250px;
+}
+
+/* play instantly section style  */
+.play {
+  text-align: right;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 130px;
+  align-items: center;
+}
+.play-content {
+  margin-left: 110px;
+}
+.play-content h2 {
+  color: #0b0223;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 125%;
+  width: 300px;
+  margin-bottom: 10px;
+}
+.play-content p {
+  color: #534c64;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 145%;
+  width: 300px;
+}
+.play-btn1 {
+  width: 430px;
+}
+.play-btn2 {
+  position: relative;
+  width: 220px;
+  top: 55px;
+  left: 120px;
+}
+
+/* responsive design  */
+/* design for mobile device */
+@media screen and (max-width: 576px) {
+  .nav,
+  .nav ul {
+    flex-direction: column;
+  }
+  .nav ul {
+    gap: 25px;
+  }
+  .nav {
+    padding: 0;
+    margin-top: 50px;
+  }
+  .nav-title {
+    margin-bottom: 30px;
+  }
+  .nav-btn {
+    margin-bottom: 10px;
+  }
+}
+
+/* design for medium device  */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .nav {
+    flex-direction: column;
+  }
+  .nav-title {
+    margin-bottom: 15px;
+  }
 }
