@@ -7,6 +7,9 @@
   border: 0;
   font-family: "Work Sans", sans-serif;
 }
+.linear-style {
+  color: #ff42a5;
+}
 
 /* header style  */
 header {
@@ -16,11 +19,16 @@ header {
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 30px 120px;
+  padding: 30px 130px;
 }
 .nav-title {
   display: flex;
   gap: 20px;
+  align-items: center;
+}
+.nav-title img {
+  width: 80px;
+  height: 40px;
 }
 .nav-title h3 {
   font-size: 45px;
@@ -34,16 +42,16 @@ header {
 }
 .nav li {
   list-style: none;
-  /* text-align: center; */
+  color: #3c354f;
+  font-size: 16px;
+  font-weight: 500;
 }
-.G-style {
-  color: #ff42a5;
-}
+
 .nav-btn {
   padding: 18px 24px;
   border-radius: 8px;
   color: #3c354f;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   background: rgba(11, 2, 35, 0.1);
 }
@@ -57,14 +65,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 120px 0px 120px;
+  padding: 10px 130px 0px 130px;
 }
-.banner-content h3 {
-  font-size: 3rem;
+.banner-title h3 {
+  font-size: 2.3rem;
   font-weight: 600;
 }
-.banner-content h1 {
-  font-size: 90px;
+.banner-title h1 {
+  font-size: 75px;
   font-weight: 800;
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
@@ -72,40 +80,81 @@ header {
   -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
 }
-.banner-description{
-    margin-bottom: 40px;
+.banner-description {
+  margin-bottom: 30px;
 }
-.banner-description p{
-    margin-bottom: 12px;
+.banner-description p {
+  margin-bottom: 12px;
 }
-.content{
-    color: #534C64;
-    font-size: 20px;
-    font-weight: 500;
+.content {
+  color: #534c64;
+  font-size: 15px;
+  font-weight: 500;
 }
-.fa-regular{
-    margin-right: 15px;
+.fa-regular {
+  margin-right: 15px;
 }
-.fa-brands{
-    margin-right: 9px;
+.fa-brands {
+  margin-right: 9px;
 }
-.banner-btn1{
-    border-radius: 48px;
-    background: #ff42a5;
-    color: #fff;
-    font-size: 20PX;
-    font-weight: 600;
-    padding: 16px 35px;
+.banner-btn1 {
+  border-radius: 48px;
+  background: #ff42a5;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 15px 32px;
+  margin-right: 12px;
 }
-.banner-btn2{
-    border-radius: 48px;
-    background: #4EC5F7;
-    color: #fff;
-    font-size: 20PX;
-    font-weight: 600;
-    padding: 16px 35px;
+.banner-btn2 {
+  border-radius: 48px;
+  background: #4ec5f7;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 15px 32px;
 }
-.img img{
-    width: 530px;
+.img img {
+  width: 550px;
 }
 
+/* online games section style  */
+.games-content {
+  text-align: center;
+  margin-top: 70px;
+}
+.games-content h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #0b0223;
+  margin-bottom: 10px;
+}
+.funny-style {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.games-content p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #534c64;
+}
+
+/* card style  */
+.all-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 130px;
+  gap: 10px;
+}
+.card img {
+  width: 255px;
+}
+.card p {
+  color: #534c64;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  width: 250px;
+}
