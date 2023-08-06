@@ -161,9 +161,10 @@ header {
   width: 255px;
   margin-bottom: 10px;
 }
-.card-icons{
+.card-icons {
   position: static;
   font-size: 1px;
+  color: red;
 }
 
 .card p {
