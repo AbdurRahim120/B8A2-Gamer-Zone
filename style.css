@@ -56,7 +56,7 @@ header {
   font-weight: 500;
   background: rgba(11, 2, 35, 0.1);
 }
-.fa-youtube {
+.f-youtube {
   margin-left: 24px;
   margin-right: 16px;
 }
@@ -66,17 +66,22 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 130px 0px 130px;
 }
-/* .banner-content{
+.banner-content {
   background: url("images/Group\ 14.png");
-} */
+  background-size: 600px 520px;
+  background-repeat: no-repeat;
+  width: 50%;
+  padding-left: 130px;
+  height: 520px;
+}
 .banner-title h3 {
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   font-weight: 600;
+  margin-top: 112px;
 }
 .banner-title h1 {
-  font-size: 75px;
+  font-size: 65px;
   font-weight: 800;
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
@@ -89,10 +94,8 @@ header {
 }
 .banner-description p {
   margin-bottom: 12px;
-}
-.content {
   color: #534c64;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
 }
 .fa-regular {
@@ -120,6 +123,7 @@ header {
 }
 .img img {
   width: 550px;
+  margin-right: 130px;
 }
 
 /* online games section style  */
@@ -128,7 +132,7 @@ header {
   margin-top: 70px;
 }
 .games-content h2 {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: #0b0223;
   margin-bottom: 10px;
@@ -153,9 +157,15 @@ header {
   gap: 10px;
 }
 .card img {
+  z-index: 1;
   width: 255px;
   margin-bottom: 10px;
 }
+.card-icons{
+  position: static;
+  font-size: 1px;
+}
+
 .card p {
   color: #534c64;
   font-size: 14px;
@@ -166,10 +176,10 @@ header {
 
 /* play instantly section style  */
 .play {
-  text-align: right;
   display: flex;
   justify-content: space-around;
   padding: 30px 130px;
+  text-align: right;
   align-items: center;
 }
 .play-content {
@@ -177,7 +187,7 @@ header {
 }
 .play-content h2 {
   color: #0b0223;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   font-weight: 700;
   line-height: 125%;
   width: 300px;
@@ -199,12 +209,92 @@ header {
   top: 55px;
   left: 120px;
 }
+/* circle section style  */
+.circle {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 170px;
+  margin-top: 80px;
+}
+.circle-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  padding: 10px;
+  color: #0b0223;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  /* background: #fff; */
+}
+.circle-btn:hover {
+  border: 2px solid #ff42a5;
+  color: #ff42a5;
+  cursor: pointer;
+}
+.circle-btn img {
+  margin-right: 10px;
+  width: 20%;
+}
+.btn-style {
+  margin-left: 100px;
+}
+
+/* footer style  */
+.footer {
+  background: #0b0223;
+  text-align: center;
+  padding: 60px 130px;
+}
+.footer-nav {
+  padding: 0px 430px;
+  margin-bottom: 40px;
+}
+.footer-nav h3 {
+  color: #fff;
+}
+.footer-title,
+.footer-icon,
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-title {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding: 0px 250px;
+}
+.footer-icon {
+  margin-bottom: 30px;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-icon button {
+  background: #0b0223;
+}
+.footer-content {
+  padding: 0px 300px;
+  margin-bottom: 20px;
+}
+.footer-content,
+.footer-end {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 10px;
+  font-weight: 500;
+}
 
 /* responsive design  */
 /* design for mobile device */
 @media screen and (max-width: 576px) {
   .nav,
-  .nav ul {
+  .nav ul,
+  .all-card,
+  .play {
     flex-direction: column;
   }
   .nav ul {
@@ -212,22 +302,218 @@ header {
   }
   .nav {
     padding: 0;
-    margin-top: 50px;
+    padding-top: 40px;
   }
   .nav-title {
     margin-bottom: 30px;
   }
   .nav-btn {
+    margin-bottom: 30px;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-content {
+    padding-left: 50px;
+    background-size: 390px;
+    width: 350px;
+    height: 310px;
+    margin-left: 35px;
+  }
+  .banner-title h3 {
+    margin-top: 30px;
+    font-size: 1.8rem;
+  }
+  .banner-title h1 {
+    font-size: 55px;
     margin-bottom: 10px;
+  }
+  .banner-description {
+    margin-bottom: 20px;
+  }
+  .banner-description p {
+    margin-bottom: 8px;
+  }
+  .img img {
+    width: 250px;
+    margin: 30px 0px;
+  }
+
+  .games-content {
+    margin-top: 40px;
+  }
+  .all-card {
+    padding: 0;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+  }
+  .play {
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 30px 0;
+  }
+  .play-btn2 {
+    width: 115px;
+    top: 23px;
+    left: 74px;
+  }
+  .play-btn1 {
+    width: 250px;
+  }
+  .play-img {
+    margin-top: 30px;
+    margin-right: 49px;
+  }
+  .play-content {
+    margin-left: 0;
+  }
+  .circle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+  }
+  .btn-style {
+    margin: 0;
+  }
+  .circle-btn {
+    font-size: 10px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+  }
+  .circle-btn img {
+    width: 30%;
+  }
+
+  .footer {
+    padding: 40px 0px;
+  }
+  .footer-nav {
+    padding: 0px 110px;
+  }
+  .footer-title,
+  .footer-icon,
+  .footer-content {
+    padding: 0;
+  }
+  .footer-title,
+  .footer-icon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0px 90px;
+  }
+  .footer-icon {
+    padding: 0px 130px;
+  }
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0px 80px;
   }
 }
 
 /* design for medium device  */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .nav {
+  .nav,
+  .play {
     flex-direction: column;
   }
+
   .nav-title {
     margin-bottom: 15px;
+  }
+  .all-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 30px 100px;
+  }
+  .games-content {
+    text-align: center;
+  }
+  .play {
+    margin-top: 30px;
+    padding: 0;
+    text-align: center;
+  }
+  .play-content {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+  .play-btn2 {
+    width: 115px;
+    top: 23px;
+    left: 74px;
+  }
+  .play-btn1 {
+    width: 250px;
+    margin-right: 110px;
+  }
+
+  .banner {
+    padding-left: 110px;
+    flex-direction: column-reverse;
+  }
+  .img img {
+    margin: 30px 0px;
+    width: 70%;
+    padding-left: 40px;
+  }
+  .banner-content {
+    background-size: 560px;
+    padding-left: 100px;
+    width: 80%;
+    height: 430px;
+  }
+  .banner-title h3 {
+    margin-top: 65px;
+  }
+  .circle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px 100px;
+    margin-top: 70px;
+  }
+  .btn-style {
+    margin: 0;
+  }
+  .circle-btn {
+    font-size: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+  }
+  .circle-btn img {
+    width: 30%;
+  }
+  .footer {
+    padding: 40px 0px;
+  }
+  .footer-nav {
+    padding: 10px 280px;
+  }
+  .footer-title,
+  .footer-icon,
+  .footer-content {
+    padding: 0;
+  }
+  .footer-title,
+  .footer-icon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px 180px;
+  }
+  .footer-icon {
+    padding: 0px 250px;
+  }
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0px 210px;
   }
 }
